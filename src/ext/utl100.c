@@ -61,18 +61,22 @@ int memIcmp (PUCHAR s1, PUCHAR s2 , int len)
 UCHAR toUpper(UCHAR c)
 {
    switch(c) {
+   /* Edit By ymurata1967
       case 'æ' : return 'Æ';
       case 'ø' : return 'Ø';
       case 'å' : return 'Å';
+   */
       default  : return toupper(c);
    }
 }
 UCHAR toLower(UCHAR c)
 {
    switch(c) {
+   /* Edit By ymurata1967
       case 'Æ' : return 'æ';
       case 'Ø' : return 'ø';
       case 'Å' : return 'å';
+   */
       default  : return tolower(c);
    }
 }
