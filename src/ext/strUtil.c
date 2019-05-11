@@ -92,18 +92,20 @@ PUCHAR memmem  (PUCHAR heystack , ULONG haystackLen,
 UCHAR toUpper(UCHAR c)
 {
    switch(c) {
-      case 'æ' : return 'Æ';
-      case 'ø' : return 'Ø';
-      case 'å' : return 'Å';
+      // Edit By ymurata1967
+      // case 'æ' : return 'Æ';
+      // case 'ø' : return 'Ø';
+      // case 'å' : return 'Å';
       default  : return toupper(c);
    }
 }
 UCHAR toLower(UCHAR c)
 {
    switch(c) {
-      case 'Æ' : return 'æ';
-      case 'Ø' : return 'ø';
-      case 'Å' : return 'å';
+      // Edit By ymurata1967
+      // case 'Æ' : return 'æ';
+      // case 'Ø' : return 'ø';
+      // case 'Å' : return 'å';
       default  : return tolower(c);
    }
 }
